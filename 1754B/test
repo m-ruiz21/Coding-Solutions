@@ -1,0 +1,17 @@
+#!/bin/bash
+
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+
+# run and compile code
+g++ *.cpp
+./a.out < tc.txt > out.txt
+
+# test
+if diff -Z expected.txt out.txt; then
+        echo -e "  ${GREEN}[ Passed all tests ]${NC}"
+    else
+        echo -e "  ${RED}[ Failed tests]${NC}"
+    fi

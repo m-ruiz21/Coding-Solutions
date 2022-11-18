@@ -1,0 +1,16 @@
+#!/bin/bash
+
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+
+# run code
+g++ -fsanitize=address *.cpp
+./a.out < tc.txt > out.txt
+
+if diff -Z expected.txt out.txt; then
+        echo -e "  ${GREEN}[ All Tests Passed ]${NC}"
+    else
+        echo -e "  ${RED}[ Some Tests Failed ]${NC}"
+    fi
