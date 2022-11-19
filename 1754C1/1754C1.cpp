@@ -1,13 +1,5 @@
 #include <iostream>
-#include <iterator>
-#include <utility>
-#include <vector>
-#include <cmath>
-#include <stdlib.h> 
 using namespace std;
-#define  GREEN = "\033[0;32m"
-#define RED = "\033[0;31m"
-#define NC = "\033[0m"
 
 /*
     first hypothesis -> can't cancel out if it's an odd number
