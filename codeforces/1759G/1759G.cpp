@@ -28,7 +28,7 @@ void sol()
         }
     }
    
-    for (int i = n - 1; i > -1; i-=2)
+    for (int i = n - 1; i > 0; i-=2)
     {
         for(int j = n; j > 0; j--)
         {
