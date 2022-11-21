@@ -8,6 +8,6 @@ mv $1/template.cpp $1/$1.cpp
 cp -p test $1
 
 # make test cases
-touch $1/cases.txt
+touch $1/tc.txt
 touch $1/expected.txt
 cd $1
