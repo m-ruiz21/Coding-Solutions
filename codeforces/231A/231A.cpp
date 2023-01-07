@@ -19,6 +19,17 @@ int n;
 
 void sol()
 {
+    int s;
+    int c = 0;
+    for (int i = 0; i < 3; i++)
+    {
+        cin >> s;
+        if (s) c++;
+    }
+    if (c >1)
+    {
+        n++;
+    }
 }
 
 int main()
@@ -28,6 +39,7 @@ int main()
     {
         sol();
     }
-
+    
+    cout << n << endl;
     return 0;
 }
